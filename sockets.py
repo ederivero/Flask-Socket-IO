@@ -30,4 +30,4 @@ def mouse_msg(message):
     print(message)
     emit('mouse',message, broadcast=True, include_self=False)
 if __name__ == '__main__':
-    socketio.run(app,debug=True)
+    socketio.run(app,log_output=False,debug=True)
